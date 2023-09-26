@@ -4,7 +4,7 @@ GITHUB: https://github.com/thalesacardoso
 DATA: 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
 
 @font-face {
     font-family: 'NeueRegular';
@@ -19,6 +19,7 @@ DATA:
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     list-style: none;
     color: white;
 }
@@ -43,7 +44,12 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
 }
 
 p {
@@ -67,6 +73,11 @@ button {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding-bottom: 300px;
+}
+
+.bgcolor {
+    background-color: #55569E;
 }
 
 /*****************************************
@@ -78,10 +89,6 @@ header {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-}
-
-header .imagem {
-    /* background-color: yellow; */
 }
 
 header .imagem img {
@@ -112,4 +119,78 @@ header .texto p img {
 }
 
 
+/*****************************************
+            ESTILO DO MAIN
+******************************************/
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
+main section {
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+main section .conteudo.oculto {
+    display: none;
+}
+
+main section .titulo {
+    border: 1px solid #FFF;
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .titulo .seta {
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+}
+
+main .conteudo {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hard-skill,
+.soft-skill {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+main .hard-skill h3,
+main .soft-skill h3 {
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+main .hard-skill img {
+    max-width: 3rem;
+}
+
+main .soft-skill ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+main .soft-skill ul li {
+    list-style: disc ;
+    list-style-position: inside;
+    font-size: 0.875rem;
+}
