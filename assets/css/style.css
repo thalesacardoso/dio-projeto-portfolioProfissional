@@ -49,7 +49,7 @@ h2 {
 
 h3 {
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 p {
@@ -152,7 +152,8 @@ main .titulo .seta {
 }
 
 main .conteudo {
-    margin-top: 1rem;
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -193,4 +194,60 @@ main .soft-skill ul li {
     list-style: disc ;
     list-style-position: inside;
     font-size: 0.875rem;
+}
+
+
+/*****************   IDIOMAS   ******************/
+
+main .idiomas .conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+main .idiomas ul.idiomas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+main .idiomas ul.idiomas li {
+    list-style:url('../icones/certo.png') ;
+    list-style-position: inside;
+    font-size: 14px;
+}
+
+/*****************   EDUCAÇÃO   ******************/
+
+main .educacao .conquistas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+main .educacao .conquistas h3 {
+    width: 100%;
+    text-align: center;
+}
+
+main .educacao .conquistas img {
+    max-width: 5rem;
+}
+
+main .educacao .cursos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+main .educacao .cursos p {
+    font-size: 0.8rem;
+}
+
+main .educacao .cursos a:hover {
+    text-decoration: underline;
 }
