@@ -37,23 +37,24 @@ body {
 }
 
 h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 400;
     font-family: 'NeueRegular', sans-serif;
 }
 
 h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-h3 {
     font-size: 1.3rem;
     font-weight: 600;
 }
 
-p {
-    font-size: 1rem;
+h3 {
+    font-size: 1.0rem;
+    font-weight: 600;
+}
+
+p,
+li {
+    font-size: 0.875rem;
     font-weight: 400;
     color: #FFF;
 }
@@ -67,17 +68,18 @@ button {
 }
 
 .content {
+    width: 100%;
+    max-width: 900px;
     border: 2px solid #fff;
     border-radius: 10px;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding-bottom: 300px;
 }
 
 .bgcolor {
-    background-color: #55569E;
+    background-color: rgb(30, 133, 216);
 }
 
 /*****************************************
@@ -92,12 +94,14 @@ header {
 }
 
 header .imagem img {
+    width: 100%;
     max-width: 200px;
     max-height: 200px;
     border-radius: 50%;
 }
 
 header .texto {
+    width: 95%;
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
@@ -106,10 +110,6 @@ header .texto {
 header .texto h1 {
     text-align: center;
     margin-bottom: 1rem;
-}
-
-header .texto p {
-    font-size: 0.875rem;
 }
 
 header .texto p img {
@@ -144,6 +144,13 @@ main section .titulo {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.5s;
+}
+
+main section .titulo:hover {
+    background-color: rgb(30, 133, 216);
+    border: 0;
+    cursor: pointer;
 }
 
 main .titulo .seta {
@@ -152,75 +159,72 @@ main .titulo .seta {
 }
 
 main .conteudo {
-    margin-top: 2rem;
-    padding-bottom: 1.5rem;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
 }
+
+/*****************   SKILLS   ******************/
 
 .hard-skill,
 .soft-skill {
+    width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
 }
 
-main .hard-skill h3,
-main .soft-skill h3 {
+.hard-skill h3,
+.soft-skill h3 {
     width: 100%;
     margin-top: 1rem;
-    text-align: center;
-    font-weight: 600;
 }
 
-main .hard-skill img {
+.hard-skill img {
     max-width: 3rem;
 }
 
-main .soft-skill ul {
+.soft-skill ul {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 0.5rem;
 }
 
-main .soft-skill ul li {
-    list-style: disc ;
+.soft-skill ul li {
+    list-style: disc;
     list-style-position: inside;
-    font-size: 0.875rem;
 }
 
 
 /*****************   IDIOMAS   ******************/
 
-main .idiomas .conteudo {
+.idiomas .conteudo {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-main .idiomas ul.idiomas {
+.idiomas ul.idiomas {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
 
-main .idiomas ul.idiomas li {
-    list-style:url('../icones/certo.png') ;
-    list-style-position: inside;
-    font-size: 14px;
+.idiomas ul.idiomas li::before {
+    content: url(../icones/icone-certo.png);
+    padding-right: 0.5rem;
 }
 
 /*****************   EDUCAÇÃO   ******************/
 
-main .educacao .conquistas {
+.educacao .conquistas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -228,26 +232,70 @@ main .educacao .conquistas {
     gap: 2rem;
 }
 
-main .educacao .conquistas h3 {
+.educacao .conquistas h3 {
     width: 100%;
-    text-align: center;
 }
 
-main .educacao .conquistas img {
+.educacao .conquistas img {
     max-width: 5rem;
 }
 
-main .educacao .cursos {
+.educacao .cursos {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-main .educacao .cursos p {
-    font-size: 0.8rem;
-}
-
-main .educacao .cursos a:hover {
+.educacao .cursos a:hover {
     text-decoration: underline;
 }
+
+/*****************   PORTFÓLIO   ******************/
+
+.portfolio .projetos {
+    width: 100%;
+}
+
+.portfolio .projetos h3 a {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.portfolio .projetos h3 a:hover {
+    text-decoration: underline;
+}
+
+.portfolio .projetos h3::before {
+    content: url(../icones/icone-github.png);
+    padding-right: 0.5rem;
+}
+
+/*****************   EXPERIÊNCIAS   ******************/
+
+section.experiencias .experiencia {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.experiencia p.data::before {
+    content: url(../icones/icone-calendario.png);
+    padding-right: 0.5rem;
+}
+
+
+/*****************************************
+            ESTILO DO RODAPÉ
+******************************************/
+
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: end;
+}
+
+footer img {
+    max-width: 100px;
+}
+
