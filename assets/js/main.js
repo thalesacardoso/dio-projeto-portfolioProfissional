@@ -59,6 +59,7 @@ function mudarSkill(dados) {
 
 }
 
+
 function mudarIdioma(dados) {
    let idioma = document.getElementById('api-idioma')
 
@@ -67,6 +68,7 @@ function mudarIdioma(dados) {
    })
 
 }
+
 
 function mudarPortfolio(dados) {
    let portfolio = document.getElementById('api-portfolio')
@@ -82,6 +84,21 @@ function mudarPortfolio(dados) {
 }
 
 
+function mudarExperiencia(dados) {
+   let experiencia = document.getElementById('api-experiencia')
+
+   dados.experience.map((exp) => {
+      experiencia.innerHTML += `
+         <div class="experiencia">
+            <h3>${exp.name}</h3>
+            <p class="data">${exp.period}</p>
+            <p class="descricao">
+               ${exp.description}
+            </p>
+         </div> `
+   })
+
+}
 
 
 

@@ -8,7 +8,7 @@
   "skills": {
     "hardSkills": [
       {
-        "name": "HTML",
+        "nome": "HTML",
         "logo": "https://raw.githubusercontent.com/thalesacardoso/dio-projeto-portfolioProfissional/main/data/imgs/html.png"
       },
       {
@@ -36,10 +36,40 @@
       "Organização"
     ]
   },
+  
+  "education": [
+    {
+      "name": "HTML",
+      "titulo": "Formação HTML Web Developer",
+      "logo": "hhttps://raw.githubusercontent.com/thalesacardoso/dio-projeto-portfolioProfissional/main/data/forms/form-html.png"
+    },
+    {
+      "name": "CSS",
+      "titulo": "Formação CSS Web Developer",
+      "logo": "hhttps://raw.githubusercontent.com/thalesacardoso/dio-projeto-portfolioProfissional/main/data/forms/form-css.png"
+    },
+    {
+      "name": "Lógica de programação",
+      "titulo": "Formação Lógica de Programação",
+      "logo": "hhttps://raw.githubusercontent.com/thalesacardoso/dio-projeto-portfolioProfissional/main/data/forms/form-logica.png"
+    },
+    {
+      "name": "Javascript",
+      "titulo": "Formação JavaScript Developer",
+      "logo": "hhttps://raw.githubusercontent.com/thalesacardoso/dio-projeto-portfolioProfissional/main/data/forms/form-javascript.png"
+    },
+    {
+      "name": "AWS",
+      "titulo": "AWS - Nexa Resources",
+      "logo": "hhttps://raw.githubusercontent.com/thalesacardoso/dio-projeto-portfolioProfissional/main/data/forms/form-awsNexa.png"
+    }
+  ],
+
   "languages": [
     "Português BR",
     "Inglês (básico)"
   ],
+
   "portfolio": [
     {
       "name": "Pokedex em Javascript (Responsivo)",
