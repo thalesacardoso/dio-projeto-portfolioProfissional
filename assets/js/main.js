@@ -70,6 +70,24 @@ function mudarIdioma(dados) {
 }
 
 
+function mudarEducacao(dados){
+   let conquistas = document.getElementById('api-conquistas')
+   let cursos = document.getElementById('api-cursos')
+
+   dados.education.map((conquist) => {
+      conquistas.innerHTML += `<img src="${conquist.logo}" alt="${conquist.name}"> `
+      cursos.innerHTML += `
+         <div>
+            <h3><a href="#">${conquist.name}</a></h3>
+            <p>${conquist.titulo}</p>
+         </div> 
+
+      `
+   })
+
+}
+
+
 function mudarPortfolio(dados) {
    let portfolio = document.getElementById('api-portfolio')
 
@@ -100,7 +118,5 @@ function mudarExperiencia(dados) {
 
 }
 
-
-
-// console.log(dados)
+// Chama a API
 apiGithub();

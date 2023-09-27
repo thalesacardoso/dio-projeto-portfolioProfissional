@@ -9,6 +9,7 @@ async function apiGithub() {
             mudarPerfil(dados)
             mudarSkill(dados)
             mudarIdioma(dados)
+            mudarEducacao(dados)
             mudarPortfolio(dados)
             mudarExperiencia(dados)
          })
