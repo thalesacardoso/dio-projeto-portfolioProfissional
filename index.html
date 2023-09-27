@@ -20,15 +20,15 @@ DATA:
 		<!---------- INÍCIO HEADER ---------->
 		<header>
 			<div class="imagem">
-				<img src="https://i.pinimg.com/originals/81/fc/e6/81fce6d4b19eb7d08cb9cb0c9ced4e7f.jpg"
+				<img class="api-perfil" src="https://i.pinimg.com/originals/81/fc/e6/81fce6d4b19eb7d08cb9cb0c9ced4e7f.jpg"
 					alt="Imagem de perfil">
 			</div>
 			<div class="texto">
-				<h1>Olá, eu sou Thales Cardoso</h1>
-				<p><img src="./assets/icones/user.svg" alt="ícone"> Desenvolvedor Jr</p>
-				<p><img src="./assets/icones/map.svg" alt="ícone"> Rio de Janeiro - RJ</p>
-				<p><img src="./assets/icones/zap.svg" alt="ícone"> (22)99999-8888</p>
-				<p><img src="./assets/icones/email.svg" alt="ícone"> abc@email.com</p>
+				<h1>Olá, eu sou <span class="api-perfil"> ### </span></h1>
+				<p><img src="./assets/icones/user.svg" alt="ícone"> <span class="api-perfil"> ### </span> </p>
+				<p><img src="./assets/icones/map.svg" alt="ícone"> <span class="api-perfil"> ### </span> </p>
+				<p><img src="./assets/icones/zap.svg" alt="ícone"> <span class="api-perfil"> ### </span> </p>
+				<p><img src="./assets/icones/email.svg" alt="ícone"> <span class="api-perfil"> ### </span> </p>
 			</div>
 		</header>
 		<!---------- FIM HEADER ---------->
@@ -46,20 +46,22 @@ DATA:
 				<div class="conteudo oculto">
 					<div class="hard-skill">
 						<h3>Habilidades profissionais: </h3>
-						<img src="./assets/icones/html.svg" alt="html">
-						<img src="./assets/icones/css.svg" alt="css">
-						<img src="./assets/icones/git.svg" alt="git">
-						<img src="./assets/icones/github.svg" alt="github">
+						<div class="api-skill">
+							<img src="./assets/icones/html.svg" alt="html">
+							<img src="./assets/icones/css.svg" alt="css">
+							<img src="./assets/icones/git.svg" alt="git">
+							<img src="./assets/icones/github.svg" alt="github">
+						</div>
 					</div>
 
 					<div class="soft-skill">
 						<h3>Habilidades pessoais: </h3>
 						<ul>
-							<li>Facilidade com tarefas práticas</li>
-							<li>Comunicação</li>
-							<li>Trabalho em Equipe</li>
-							<li>Organização</li>
-							<li>Comprometimento com resultados</li>
+							<li class="api-softSkill">Facilidade com tarefas práticas</li>
+							<li class="api-softSkill">Comunicação</li>
+							<li class="api-softSkill">Trabalho em Equipe</li>
+							<li class="api-softSkill">Organização</li>
+							<li class="api-softSkill">Comprometimento com resultados</li>
 						</ul>
 					</div>
 				</div>
@@ -74,9 +76,8 @@ DATA:
 
 				<div class="conteudo oculto">
 					<ul class="idioma">
-						<li>Português(BR)</li>
-						<li>Inglês</li>
-						<li>Espanhol</li>
+						<li class="api-idioma">Português(BR)</li>
+						<li class="api-idioma">Inglês</li>
 					</ul>
 				</div>
 			</section><!-- FIM IDIOMAS -->
@@ -132,22 +133,22 @@ DATA:
 
 				<div class="conteudo oculto">
 					<div class="projetos">
-						<h3><a href="###">Titulo do projeto</a></h3>
+						<h3>Titulo do projeto 1</h3>
 						<p>http://www.nomedosite.com.br</p>
 					</div>
 
 					<div class="projetos">
-						<h3><a href="###">Titulo do projeto</a></h3>
+						<h3>Titulo do projeto 2</h3>
 						<p>http://www.nomedosite.com.br</p>
 					</div>
 
 					<div class="projetos">
-						<h3><a href="###">Titulo do projeto</a></h3>
+						<h3>Titulo do projeto 3</h3>
 						<p>http://www.nomedosite.com.br</p>
 					</div>
 
 					<div class="projetos">
-						<h3><a href="###">Titulo do projeto</a></h3>
+						<h3>Titulo do projeto 4</h3>
 						<p>http://www.nomedosite.com.br</p>
 					</div>
 				</div>
@@ -210,6 +211,7 @@ DATA:
 
 
 		<!-- SCRIPT JS-->
+		<script src="assets/js/api.js"></script>
 		<script src="assets/js/main.js"></script>
 	</div>
 </body>
