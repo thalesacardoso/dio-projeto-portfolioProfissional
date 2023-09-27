@@ -1,7 +1,7 @@
 /*
 DESENVOLVIDO POR: Thales Cardoso
 GITHUB: https://github.com/thalesacardoso
-DATA: 
+DATA: 27/09/2023
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
@@ -30,10 +30,14 @@ html {
 
 body {
     background-color: black;
+    background-image: url(../img/degrade1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 h1 {
@@ -77,10 +81,21 @@ button {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    z-index: 5;
 }
 
 .bgcolor {
     background-color: rgb(30, 133, 216);
+}
+
+.degrade-footer {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
 }
 
 /*****************************************
@@ -285,6 +300,10 @@ section#experiencias {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+#experiencias .experiencia {
+    width: 100%;
 }
 
 #experiencias p.data::before {
