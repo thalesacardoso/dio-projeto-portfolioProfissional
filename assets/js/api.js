@@ -7,5 +7,7 @@ async function apiGithub() {
    .then(dados => {
       mudarPerfil(dados)
       mudarSkill(dados)
+      mudarIdioma(dados)
+      mudarPortfolio(dados)
    })
 }

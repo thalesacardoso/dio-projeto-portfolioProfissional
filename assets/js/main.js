@@ -46,8 +46,44 @@ function mudarPerfil(dados) {
 
 
 function mudarSkill(dados) {
+   let hardSkill = document.getElementById('api-hardSkill')
+   let softSkill = document.getElementById('api-softSkill')
+
+   dados.skills.hardSkills.map((skill) => {
+      hardSkill.innerHTML += `<img src="${skill.logo}" alt="${skill.name}">`
+   })
+
+   dados.skills.softSkills.map((skill) => {
+      softSkill.innerHTML += `<li > ${skill} </li>`
+   })
+
+}
+
+function mudarIdioma(dados) {
+   let idioma = document.getElementById('api-idioma')
+
+   dados.languages.map((lang) => {
+      idioma.innerHTML += `<li> ${lang} </li>`
+   })
+
+}
+
+function mudarPortfolio(dados) {
+   let portfolio = document.getElementById('api-portfolio')
+
+   dados.portfolio.map((port) => {
+      portfolio.innerHTML += `
+      <div class="projetos">
+         <h3>${port.name}</h3>
+         <p>${port.url}</p>
+      </div> `
+   })
 
 }
 
 
+
+
+
+// console.log(dados)
 apiGithub();
