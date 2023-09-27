@@ -73,20 +73,30 @@
   "portfolio": [
     {
       "name": "Pokedex em Javascript (Responsivo)",
-      "url": "https://github.com/thalesacardoso/dio-projeto-pokedex",
+      "url": "https://thalesacardoso.github.io/dio-projeto-pokedex/",
       "github": true
     },
     {
       "name": "Clone do Site da HBO Max (Responsivo)",
-      "url": "https://github.com/thalesacardoso/dio-clone-hbomax",
+      "url": "https://thalesacardoso.github.io/dio-clone-hbomax/",
+      "github": true
+    },
+    {
+      "name": "Clone do Site do Discord (Responsivo)",
+      "url": "https://thalesacardoso.github.io/dio-clone-discord/",
+      "github": true
+    },
+    {
+      "name": "Landing Page",
+      "url": "https://thalesacardoso.github.io/dio-landingpage1/",
       "github": true
     }
   ],
   "experience": [
     {
-      "name": "Desenvolvedor Front-End / DIO",
+      "name": "Desenvolvedor Front-End / Freelancer",
       "period": "2020 - até o momento",
-      "description": "É um prazer trabalhar ao lado de tantos profissionais excepcionais e construir tantas inovações de mercado."
+      "description": "Trabalho com desenvolvimento de Websites como Freelancer"
     }
   ]
 }

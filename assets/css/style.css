@@ -189,8 +189,16 @@ main .conteudo {
     margin-top: 1rem;
 }
 
-#skills .hard-skill img {
-    max-height: 3rem;
+#skills .hard-skill div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+}
+
+#skills .hard-skill div img {
+    max-width: 3rem;
 }
 
 #skills .soft-skill ul {
@@ -235,7 +243,13 @@ main .conteudo {
     width: 100%;
 }
 
-#educacao .conquistas img {
+#educacao .conquistas div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#educacao .conquistas div img {
     max-width: 4rem;
 }
 
@@ -319,12 +333,12 @@ footer img {
         font-size: 1rem;
     }
 
-    #skills .hard-skill img {
-        max-height: 4rem;
+    #skills .hard-skill div img {
+        max-width: 4rem;
     }
 
-    #educacao .conquistas img {
-        max-width: 4.5rem;
+    #educacao .conquistas div img {
+        max-width: 5rem;
     }
 
 }
@@ -383,8 +397,8 @@ footer img {
         text-align: center;
     }
 
-    #skills .hard-skill img {
-        max-height: 5rem;
+    #skills .hard-skill div img {
+        max-width: 4.5rem;
     }
 
     #idiomas .conteudo ul.idioma {
@@ -392,8 +406,8 @@ footer img {
         gap: 4rem;
     }
 
-    #educacao .conquistas img {
-        max-width: 5.5rem;
+    #educacao .conquistas div img {
+        max-width: 6rem;
     }
 
 }

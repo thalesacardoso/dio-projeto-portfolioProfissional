@@ -94,7 +94,7 @@ function mudarPortfolio(dados) {
    dados.portfolio.map((port) => {
       portfolio.innerHTML += `
       <div class="projetos">
-         <h3>${port.name}</h3>
+         <h3><a href="${port.url}">${port.name} </a></h3>
          <p>${port.url}</p>
       </div> `
    })
