@@ -142,12 +142,11 @@ header .texto p img {
 main {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 main section {
     border-radius: 1rem;
-    padding: 1rem;
     transition: 0.5s;
 }
 
@@ -178,7 +177,8 @@ main .titulo .seta {
 }
 
 main .conteudo {
-    padding: 2rem 0;
+    /* background-color: yellow; */
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -407,14 +407,14 @@ footer img {
         text-align: left;
     }
 
-    .skills .conteudo {
+    #skills .conteudo {
         flex-direction: row;
         align-items: start;
         gap: 4rem;
     }
 
-    .skills .conteudo h3 {
-        text-align: center;
+    #skills .conteudo h3 {
+        text-align: left;
     }
 
     #skills .hard-skill div img {

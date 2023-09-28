@@ -1,4 +1,4 @@
-// função que abre e fecha as abas da página
+// função que abre e fecha as abas da página ( Accordion )
 function abrirAba(nomeAba, i) {
    // variáveis
    let aba = document.getElementById(nomeAba)
@@ -10,6 +10,7 @@ function abrirAba(nomeAba, i) {
    aba.classList.toggle('bgcolor')
    conteudo.classList.toggle('oculto')
 
+   // Verifica se existe a classe bgcolor, se existir ele tira a borda e gira a seta da aba.
    if (aba.classList[0] == 'bgcolor') {
       titulo.style.border = '0'
       seta.style.rotate = '180deg'
@@ -19,7 +20,7 @@ function abrirAba(nomeAba, i) {
    }
 }
 
-
+// Muda os dados do perfil dentro da página através da API
 function mudarPerfil(dados) {
 
    let perfil = {}
@@ -44,7 +45,7 @@ function mudarPerfil(dados) {
 
 }
 
-
+// Muda os dados do Skill dentro da página através da API
 function mudarSkill(dados) {
    let hardSkill = document.getElementById('api-hardSkill')
    let softSkill = document.getElementById('api-softSkill')
@@ -59,7 +60,7 @@ function mudarSkill(dados) {
 
 }
 
-
+// Muda os dados do Idioma dentro da página através da API
 function mudarIdioma(dados) {
    let idioma = document.getElementById('api-idioma')
 
@@ -69,7 +70,7 @@ function mudarIdioma(dados) {
 
 }
 
-
+// Muda os dados da Educação dentro da página através da API
 function mudarEducacao(dados){
    let conquistas = document.getElementById('api-conquistas')
    let cursos = document.getElementById('api-cursos')
@@ -87,7 +88,7 @@ function mudarEducacao(dados){
 
 }
 
-
+// Muda os dados do Portfólio dentro da página através da API
 function mudarPortfolio(dados) {
    let portfolio = document.getElementById('api-portfolio')
 
@@ -101,7 +102,7 @@ function mudarPortfolio(dados) {
 
 }
 
-
+// Muda os dados de Experiência Profissional dentro da página através da API
 function mudarExperiencia(dados) {
    let experiencia = document.getElementById('api-experiencia')
 
